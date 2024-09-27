@@ -1,0 +1,108 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: 3px groove gainsboro;
+}
+
+.opcionesMenu{
+    display: flex;
+    list-style: none;
+}
+
+#menu-toggle{
+    display: none;
+    cursor: pointer;
+}
+
+li{
+    padding-right: 30px;
+}
+
+h4{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+}
+
+main{
+    /* width: 75%; */
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#sectionProducto{
+    width: 50%;
+    
+}
+
+#nameProd{
+    font-size: 64px;
+    font-weight: lighter;
+}
+
+#descripcion{
+    width: 275px;
+
+}
+
+.otros li{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 200px;
+}
+
+#imagenes{
+    display: flex;
+}
+
+
+.botonColor{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.botonColor:hover{
+    border-width: 5px;
+    border-color: black;
+}
+
+img.deskV{
+    width: 500px;
+    height: 525px;
+}
+
+img.mobileV{
+    display: none;
+}
+
+@media(max-width: 600px){
+    .opcionesMenu{
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu-toggle{
+        display: block;
+    }
+
+    #menu-toggle:active + .opcionesMenu{
+        display: flex;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    img.deskV{
+        display: none;
+    }
+
+    img.mobileV{
+        width: 300px;
+        height: 325px;
+        display: block;
+
+    }
+}
