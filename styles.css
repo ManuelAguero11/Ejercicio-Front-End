@@ -10,7 +10,7 @@ header{
     list-style: none;
 }
 
-#menu-toggle{
+.menu-toggle{
     display: none;
     cursor: pointer;
 }
@@ -40,6 +40,7 @@ main{
 #nameProd{
     font-size: 64px;
     font-weight: lighter;
+    width: 300px;
 }
 
 #descripcion{
@@ -83,11 +84,11 @@ img.mobileV{
         flex-direction: column;
     }
 
-    #menu-toggle{
+    .menu-toggle{
         display: block;
     }
 
-    #menu-toggle:active + .opcionesMenu{
+    .menu-toggle.active + .opcionesMenu{
         display: flex;
     }
 

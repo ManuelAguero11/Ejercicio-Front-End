@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="logica.js"></script>
 </head>
 <header>
 
@@ -14,8 +13,8 @@
         <h2>Trail</h2>
     </div>
     <div>
-        <nav>
-            <div id="menu-toggle">☰</div>
+        <nav id="nav-menu">
+            <div class="menu-toggle">☰</div>
             <ul class="opcionesMenu">
                 <li>
                     <h3>Shop</h3>
@@ -42,15 +41,15 @@
     <main>
         <section id="sectionProducto">
             <img class="mobileV" src="producto.png" alt="Imagen Producto">
-            <h1 id="nameProd">Summit <br> Seeker Pack</h1>
+            <h1 id="nameProd">Summit Seeker Pack</h1>
             
             <p>ONE SIZE</p>
             <p>$120</p>
             <div>
-                <button id="gris" class="botonColor" style="background-color: gray;"></button>
-                <button class="botonColor" style="background-color: orange;"></button>
-                <button class="botonColor" style="background-color: red;"></button>
-                <button class="botonColor" style="background-color: black;"></button>
+                <button title="Gris" class="botonColor" style="background-color: gray;"></button>
+                <button title="Naranja" class="botonColor" style="background-color: orange;"></button>
+                <button title="Rojo" class="botonColor" style="background-color: red;"></button>
+                <button title="Negro" class="botonColor" style="background-color: black;"></button>
             </div>
             <div>
                 <p id="descripcion">This compact and durable backpack embodies
@@ -58,17 +57,18 @@
                 </p>
             </div>
             <div class="otros">
-                <ul>
-                    <li style="border-top: 2px solid gray;">
-                        <h3>Detalles</h3>
-                    </li>
-                    <li>
-                        <h3>Payments Options</h3>
-                    </li>
-                    <li style="border-bottom: 2px solid gray;">
-                        <h3>Shipping</h3>
-                    </li>
-                </ul>
+                <details id="details">
+                    <summary>Details</summary>
+                    <p>This backpack has many usefull purposes</p>
+                </details>
+                <details id="payments">
+                    <summary>Payments Options</summary>
+                    <p>There are some plans you can choose to pay this product</p>
+                </details>
+                <details id="shipping">
+                    <summary>Shipping</summary>
+                    <p>Choose between our own shipping system or one of the other branches </p>
+                </details>
             </div>
         
         </section>
@@ -77,6 +77,7 @@
 
 
     </main>
+    <script src="logica.js"></script>
 </body>
 
 </html>
